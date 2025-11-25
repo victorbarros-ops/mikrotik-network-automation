@@ -16,6 +16,14 @@ This repository contains advanced **RouterOS scripts** developed for high-availa
 * **Function:** Automates the lifecycle management of network devices.
 * **Logic:** Checks for new `stable` channel updates and downloads the `.npk` packages for multiple architectures (ARM, MIPS, x86, TILE) to a central server.
 
+### 4. Advanced QoS Traffic Shaping (`qos-traffic-shaping-pcq.rsc`)
+* **Function:** Bandwidth management using **PCQ (Per Connection Queuing)**.
+* **Logic:** Prioritizes real-time traffic (VoIP, DNS, Gaming) over bulk downloads, ensuring low latency even during network saturation.
+
+### 5. Port Scanner Protection (`firewall-port-scanner-protection.rsc`)
+* **Function:** Intrusion Detection System (IDS) at the router level.
+* **Logic:** Analyzes invalid TCP Flag combinations (Xmas scan, Null scan, SYN/FIN) to detect Nmap scans and automatically blacklists the attacker's IP for 2 weeks.
+
 ---
 **Author:** Victor Augusto  
 *Senior Network Infrastructure Engineer*
